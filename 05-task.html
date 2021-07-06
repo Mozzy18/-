@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task X</title>
+</head>
+
+<body>
+    <pre>
+        Задание:
+        Запросите у пользователя чилсо. Выведите все числа в обрантом поряке 
+        от введенного пользователем значения до 1. Используйте для решения рекурсию.
+    </pre>
+    <script>
+        let number = +prompt("Введите число ", 0);
+        getArrNumbers(number);
+        function getArrNumbers(num) {
+
+
+            console.log("число № " + number);
+            
+            if (number != 1) {
+                number--;
+                getArrNumbers(number);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
